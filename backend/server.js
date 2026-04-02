@@ -15,7 +15,9 @@ app.use(express.json());
 
 // Connect to MongoDB
 connectDB();
-
+app.get("/", (req, res) => {
+  res.send("University ERP API is running perfectly!");
+});
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/courses", courseRoutes);
