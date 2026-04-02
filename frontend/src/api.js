@@ -1,7 +1,7 @@
 // frontend/src/api.js
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000/api' });
+const API = axios.create({ baseURL: 'https://uni-erp-backend.onrender.com' });
 
 // Automatically attach token to requests
 API.interceptors.request.use((req) => {
